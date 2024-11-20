@@ -10,6 +10,14 @@ public class Person
         this.telephone = "";
 
     }
+
+    @Override
+    public String toString() {
+        return  "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", telephone='" + telephone + '\'';
+    }
+
     public Person(String name, String address, String telephone){
         this.name = name;
         this.address = address;
