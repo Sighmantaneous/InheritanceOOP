@@ -6,8 +6,8 @@ public class mainApp {
         Scanner scanner = new Scanner(System.in);
       //  Customer part1Customer = getCustomerData(scanner);
         Customer newCust = new Customer("Simon","ATU","3446","123",true);
-
-        System.out.println(newCust);
+        PreferredCustomer no1Cust = new PreferredCustomer("John","UoG","554","100",true,500, 5);
+        System.out.println(no1Cust);
         
     }
 
