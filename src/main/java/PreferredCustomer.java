@@ -17,9 +17,22 @@ public class PreferredCustomer extends Customer {
         return loyaltyPoints;
     }
 
-    public void setLoyaltyPoints(int loyaltyPoints) {
-        this.loyaltyPoints = loyaltyPoints;
-    }
+    public void setLoyaltyPoints(int Points) {
+        this.loyaltyPoints += Points;
+        if (loyaltyPoints >= 2000) {
+            setDiscount(10);
+        } else if (loyaltyPoints < 2000 && loyaltyPoints >= 1500) {
+            setDiscount(7);
+        } else if (loyaltyPoints < 1500 && loyaltyPoints >= 1000) {
+            setDiscount(6);
+        } else if (loyaltyPoints<1000 && loyaltyPoints >= 500) {
+            setDiscount(5);
+        }
+        else{
+            setDiscount(0);
+            }
+        }
+
 
     public int getDiscount() {
         return Discount;
